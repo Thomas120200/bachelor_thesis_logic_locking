@@ -1,0 +1,1158 @@
+---------------------------------------------
+-                  QUARTUS                  -
+---------------------------------------------
+Info (292036): Thank you for using the Quartus Prime software 30-day evaluation. You have 10 days remaining (until Apr 12, 2021) to use the Quartus Prime software with compilation and simulation support.
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Fri Apr  2 16:08:54 2021
+Info: Command: quartus_sh --flow compile top
+Info: Quartus(args): compile top
+Info: Project Name = /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/top
+Info: Revision Name = top
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Apr  2 16:09:00 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20029): Only one processor detected - disabling parallel compilation
+Info (12021): Found 2 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd
+    Info (12022): Found design unit 1: top-arch File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 102
+    Info (12023): Found entity 1: top File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 17
+Info (12021): Found 1 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/synchronizer/src/sync_pkg.vhd
+    Info (12022): Found design unit 1: sync_pkg File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/synchronizer/src/sync_pkg.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/synchronizer/src/sync.vhd
+    Info (12022): Found design unit 1: sync-beh File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/synchronizer/src/sync.vhd Line: 43
+    Info (12023): Found entity 1: sync File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/synchronizer/src/sync.vhd Line: 23
+Info (12021): Found 1 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ram/src/ram_pkg.vhd
+    Info (12022): Found design unit 1: ram_pkg File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ram/src/ram_pkg.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ram/src/dp_ram_1c1r1w.vhd
+    Info (12022): Found design unit 1: dp_ram_1c1r1w-beh File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ram/src/dp_ram_1c1r1w.vhd Line: 28
+    Info (12023): Found entity 1: dp_ram_1c1r1w File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ram/src/dp_ram_1c1r1w.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ram/src/fifo_1c1r1w.vhd
+    Info (12022): Found design unit 1: fifo_1c1r1w-arch File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ram/src/fifo_1c1r1w.vhd Line: 32
+    Info (12023): Found entity 1: fifo_1c1r1w File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ram/src/fifo_1c1r1w.vhd Line: 8
+Info (12021): Found 1 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/prng/src/prng_pkg.vhd
+    Info (12022): Found design unit 1: prng_pkg File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/prng/src/prng_pkg.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/prng/src/prng.qxp
+    Info (12023): Found entity 1: prng File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/prng/src/prng.qxp Line: -1
+Info (12021): Found 1 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/nes_controller/src/nes_controller_pkg.vhd
+    Info (12022): Found design unit 1: nes_controller_pkg File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/nes_controller/src/nes_controller_pkg.vhd Line: 5
+Info (12021): Found 2 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/math/src/math_pkg.vhd
+    Info (12022): Found design unit 1: math_pkg File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/math/src/math_pkg.vhd Line: 10
+    Info (12022): Found design unit 2: math_pkg-body File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/math/src/math_pkg.vhd Line: 28
+Info (12021): Found 2 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/lcd_graphics_controller/src/lcd_graphics_controller_pkg.vhd
+    Info (12022): Found design unit 1: lcd_graphics_controller_pkg File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/lcd_graphics_controller/src/lcd_graphics_controller_pkg.vhd Line: 5
+    Info (12022): Found design unit 2: lcd_graphics_controller_pkg-body File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/lcd_graphics_controller/src/lcd_graphics_controller_pkg.vhd Line: 56
+Info (12021): Found 1 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/lcd_graphics_controller/src/lcd_graphics_controller.qxp
+    Info (12023): Found entity 1: lcd_graphics_controller File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/lcd_graphics_controller/src/lcd_graphics_controller.qxp Line: -1
+Info (12021): Found 2 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/lcd_graphics_controller/src/gfx_if_pkg.vhd
+    Info (12022): Found design unit 1: gfx_if_pkg File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/lcd_graphics_controller/src/gfx_if_pkg.vhd Line: 30
+    Info (12022): Found design unit 2: gfx_if_pkg-body File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/lcd_graphics_controller/src/gfx_if_pkg.vhd Line: 69
+Info (12021): Found 1 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/display_switch/src/display_switch_pkg.vhd
+    Info (12022): Found design unit 1: display_switch_pkg File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/display_switch/src/display_switch_pkg.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/display_switch/src/display_switch.vhd
+    Info (12022): Found design unit 1: display_switch-arch File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/display_switch/src/display_switch.vhd Line: 48
+    Info (12023): Found entity 1: display_switch File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/display_switch/src/display_switch.vhd Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/dbg_port/src/dbg_port_top.qxp
+    Info (12023): Found entity 1: dbg_port_top File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/dbg_port/src/dbg_port_top.qxp Line: -1
+Info (12021): Found 1 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/dbg_port/src/dbg_port_pkg.vhd
+    Info (12022): Found design unit 1: dbg_port_pkg File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/dbg_port/src/dbg_port_pkg.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/dbg_port/src/dbg_port.vhd
+    Info (12022): Found design unit 1: dbg_port-arch File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/dbg_port/src/dbg_port.vhd Line: 42
+    Info (12023): Found entity 1: dbg_port File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/dbg_port/src/dbg_port.vhd Line: 9
+Info (12021): Found 1 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ball_game/src/ball_game_pkg.vhd
+    Info (12022): Found design unit 1: ball_game_pkg File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ball_game/src/ball_game_pkg.vhd Line: 7
+Info (12021): Found 1 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ball_game/src/ball_game_ex1.vhd
+    Info (12022): Found design unit 1: ball_game-arch_ex1 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ball_game/src/ball_game_ex1.vhd Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ball_game/src/ball_game.vhd
+    Info (12023): Found entity 1: ball_game File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ball_game/src/ball_game.vhd Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_top.qxp
+    Info (12023): Found entity 1: audio_cntrl_top File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_top.qxp Line: -1
+Info (12021): Found 1 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_pkg.vhd
+    Info (12022): Found design unit 1: audio_cntrl_pkg File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_pkg.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_2s.vhd
+    Info (12022): Found design unit 1: audio_cntrl_2s-arch File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_2s.vhd Line: 30
+    Info (12023): Found entity 1: audio_cntrl_2s File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_2s.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/pll.vhd
+    Info (12022): Found design unit 1: pll-SYN File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/pll.vhd Line: 52
+    Info (12023): Found entity 1: pll File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/pll.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd
+    Info (12022): Found design unit 1: ssd_controller-arch File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 31
+    Info (12023): Found entity 1: ssd_controller File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 9
+Info (12021): Found 2 design units, including 0 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller_pkg.vhd
+    Info (12022): Found design unit 1: ssd_controller_pkg File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller_pkg.vhd Line: 7
+    Info (12022): Found design unit 2: ssd_controller_pkg-body File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller_pkg.vhd Line: 31
+Info (12021): Found 2 design units, including 1 entities, in source file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/nes_controller/src/nes_controller.vhd
+    Info (12022): Found design unit 1: nes_controller-behavioral File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/nes_controller/src/nes_controller.vhd Line: 22
+    Info (12023): Found entity 1: nes_controller File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/nes_controller/src/nes_controller.vhd Line: 6
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at top.vhd(91): used implicit default value for signal "vga_r" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 91
+Warning (10541): VHDL Signal Declaration warning at top.vhd(92): used implicit default value for signal "vga_g" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 92
+Warning (10541): VHDL Signal Declaration warning at top.vhd(93): used implicit default value for signal "vga_b" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 93
+Warning (10541): VHDL Signal Declaration warning at top.vhd(94): used implicit default value for signal "vga_clk" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 94
+Warning (10541): VHDL Signal Declaration warning at top.vhd(95): used implicit default value for signal "vga_sync_n" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 95
+Warning (10541): VHDL Signal Declaration warning at top.vhd(96): used implicit default value for signal "vga_blank_n" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 96
+Warning (10036): Verilog HDL or VHDL warning at top.vhd(158): object "vbs_gfx_instr_wr" assigned a value but never read File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 158
+Warning (10036): Verilog HDL or VHDL warning at top.vhd(159): object "vbs_gfx_instr" assigned a value but never read File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 159
+Warning (10541): VHDL Signal Declaration warning at top.vhd(160): used implicit default value for signal "vbs_gfx_instr_full" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 160
+Warning (10036): Verilog HDL or VHDL warning at top.vhd(161): object "vbs_gfx_data_wr" assigned a value but never read File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 161
+Warning (10036): Verilog HDL or VHDL warning at top.vhd(162): object "vbs_gfx_data" assigned a value but never read File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 162
+Warning (10541): VHDL Signal Declaration warning at top.vhd(163): used implicit default value for signal "vbs_gfx_data_full" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 163
+Warning (10541): VHDL Signal Declaration warning at top.vhd(164): used implicit default value for signal "vbs_gfx_frame_sync" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 164
+Info (12128): Elaborating entity "nes_controller" for hierarchy "nes_controller:nes_controller_inst" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 214
+Info (12128): Elaborating entity "pll" for hierarchy "pll:pll_inst" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 225
+Info (12128): Elaborating entity "altpll" for hierarchy "pll:pll_inst|altpll:altpll_component" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/pll.vhd Line: 141
+Info (12130): Elaborated megafunction instantiation "pll:pll_inst|altpll:altpll_component" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/pll.vhd Line: 141
+Info (12133): Instantiated megafunction "pll:pll_inst|altpll:altpll_component" with the following parameter: File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/pll.vhd Line: 141
+    Info (12134): Parameter "bandwidth_type" = "AUTO"
+    Info (12134): Parameter "clk0_divide_by" = "25"
+    Info (12134): Parameter "clk0_duty_cycle" = "50"
+    Info (12134): Parameter "clk0_multiply_by" = "4"
+    Info (12134): Parameter "clk0_phase_shift" = "0"
+    Info (12134): Parameter "clk1_divide_by" = "25"
+    Info (12134): Parameter "clk1_duty_cycle" = "50"
+    Info (12134): Parameter "clk1_multiply_by" = "6"
+    Info (12134): Parameter "clk1_phase_shift" = "0"
+    Info (12134): Parameter "compensate_clock" = "CLK0"
+    Info (12134): Parameter "inclk0_input_frequency" = "20000"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=pll"
+    Info (12134): Parameter "lpm_type" = "altpll"
+    Info (12134): Parameter "operation_mode" = "NORMAL"
+    Info (12134): Parameter "pll_type" = "AUTO"
+    Info (12134): Parameter "port_activeclock" = "PORT_UNUSED"
+    Info (12134): Parameter "port_areset" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkloss" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkswitch" = "PORT_UNUSED"
+    Info (12134): Parameter "port_configupdate" = "PORT_UNUSED"
+    Info (12134): Parameter "port_fbin" = "PORT_UNUSED"
+    Info (12134): Parameter "port_inclk0" = "PORT_USED"
+    Info (12134): Parameter "port_inclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_locked" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pfdena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasecounterselect" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasedone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasestep" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phaseupdown" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pllena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanaclr" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclk" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclkena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandata" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandataout" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanread" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk0" = "PORT_USED"
+    Info (12134): Parameter "port_clk1" = "PORT_USED"
+    Info (12134): Parameter "port_clk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
+    Info (12134): Parameter "width_clock" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
+    Info (12023): Found entity 1: pll_altpll File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/pll_altpll.v Line: 29
+Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated" File: /opt/intelFPGA_lite/18.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
+Info (12128): Elaborating entity "sync" for hierarchy "sync:audio_reset_sync" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 232
+Info (12128): Elaborating entity "dbg_port" for hierarchy "dbg_port:dbg_port_inst" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 269
+Info (12128): Elaborating entity "dbg_port_top" for hierarchy "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/dbg_port/src/dbg_port.vhd Line: 44
+Info (12128): Elaborating entity "display_switch" for hierarchy "display_switch:display_switch_inst" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 300
+Info (12128): Elaborating entity "ball_game" for hierarchy "ball_game:ball_game_inst" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 333
+Info (12128): Elaborating entity "prng" for hierarchy "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ball_game/src/ball_game_ex1.vhd Line: 220
+Info (12128): Elaborating entity "audio_cntrl_2s" for hierarchy "audio_cntrl_2s:audio_cntrl_2s_inst" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 354
+Info (12128): Elaborating entity "audio_cntrl_top" for hierarchy "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_2s.vhd Line: 51
+Info (12128): Elaborating entity "lcd_graphics_controller" for hierarchy "lcd_graphics_controller:lcd_graphics_controller_inst" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 368
+Info (12128): Elaborating entity "ssd_controller" for hierarchy "ssd_controller:ssd_controller_inst" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 401
+Warning (12240): Synthesis found one or more imported partitions that will be treated as black boxes for timing analysis during synthesis
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ssd_controller:ssd_controller_inst|Mod0" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 167
+Info (12130): Elaborated megafunction instantiation "ssd_controller:ssd_controller_inst|lpm_divide:Mod0" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 167
+Info (12133): Instantiated megafunction "ssd_controller:ssd_controller_inst|lpm_divide:Mod0" with the following parameter: File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 167
+    Info (12134): Parameter "LPM_WIDTHN" = "31"
+    Info (12134): Parameter "LPM_WIDTHD" = "31"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_icm.tdf
+    Info (12023): Found entity 1: lpm_divide_icm File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/lpm_divide_icm.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_7nh File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/sign_div_unsign_7nh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_2af.tdf
+    Info (12023): Found entity 1: alt_u_div_2af File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/alt_u_div_2af.tdf Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/add_sub_7pc.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/add_sub_8pc.tdf Line: 22
+Info (13000): Registers with preset signals will power-up high File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ball_game/src/ball_game_ex1.vhd Line: 43
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "sda~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 51
+    Warning (13010): Node "sram_dq[0]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[1]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[2]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[3]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[4]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[5]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[6]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[7]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[8]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[9]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[10]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[11]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[12]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[13]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[14]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "sram_dq[15]~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Warning (13010): Node "wm8731_sdat~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 79
+    Warning (13010): Node "wm8731_sclk~synth" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 80
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "hex4[1]" is stuck at VCC File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 31
+    Warning (13410): Pin "hex4[2]" is stuck at VCC File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 31
+    Warning (13410): Pin "hex5[1]" is stuck at VCC File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 32
+    Warning (13410): Pin "hex5[2]" is stuck at VCC File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 32
+    Warning (13410): Pin "ledg[8]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 37
+    Warning (13410): Pin "osci_ch2" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 86
+    Warning (13410): Pin "osci_ch3" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 87
+    Warning (13410): Pin "osci_ch4" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 88
+    Warning (13410): Pin "vga_r[0]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 91
+    Warning (13410): Pin "vga_r[1]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 91
+    Warning (13410): Pin "vga_r[2]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 91
+    Warning (13410): Pin "vga_r[3]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 91
+    Warning (13410): Pin "vga_r[4]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 91
+    Warning (13410): Pin "vga_r[5]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 91
+    Warning (13410): Pin "vga_r[6]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 91
+    Warning (13410): Pin "vga_r[7]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 91
+    Warning (13410): Pin "vga_g[0]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 92
+    Warning (13410): Pin "vga_g[1]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 92
+    Warning (13410): Pin "vga_g[2]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 92
+    Warning (13410): Pin "vga_g[3]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 92
+    Warning (13410): Pin "vga_g[4]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 92
+    Warning (13410): Pin "vga_g[5]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 92
+    Warning (13410): Pin "vga_g[6]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 92
+    Warning (13410): Pin "vga_g[7]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 92
+    Warning (13410): Pin "vga_b[0]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 93
+    Warning (13410): Pin "vga_b[1]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 93
+    Warning (13410): Pin "vga_b[2]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 93
+    Warning (13410): Pin "vga_b[3]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 93
+    Warning (13410): Pin "vga_b[4]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 93
+    Warning (13410): Pin "vga_b[5]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 93
+    Warning (13410): Pin "vga_b[6]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 93
+    Warning (13410): Pin "vga_b[7]" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 93
+    Warning (13410): Pin "vga_clk" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 94
+    Warning (13410): Pin "vga_sync_n" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 95
+    Warning (13410): Pin "vga_blank_n" is stuck at GND File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 96
+Info (286031): Timing-Driven Synthesis is running on partition "Top"
+Info (17049): 30 registers lost all their fanouts during netlist optimizations.
+Info (35026): Attempting to remove 478 I/O cell(s) that do not connect to top-level pins or have illegal connectivity
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|clk~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|clk"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|res_n~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|res_n"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[0]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[0]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[1]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[1]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[2]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[2]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[3]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[3]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[4]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[4]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[5]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[5]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[6]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[6]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[7]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_high_time[7]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[0]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[0]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[1]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[1]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[2]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[2]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[3]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[3]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[4]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[4]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[5]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[5]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[6]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[6]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[7]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_high_time[7]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_play~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_play"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_play~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_play"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[2]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[2]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[1]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[1]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[0]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[0]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[4]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[4]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[3]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[3]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[5]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[5]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[6]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[6]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[7]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_0_low_time[7]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[2]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[2]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[1]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[1]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[0]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[0]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[5]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[5]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[4]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[4]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[3]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[3]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[6]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[6]"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[7]~input"
+    Info (35027): Removed I/O cell "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|synth_cntrl_1_low_time[7]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[0]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[1]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[2]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[3]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[4]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[5]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[6]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[7]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[7]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[8]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[8]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[9]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[9]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[10]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[10]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[11]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[11]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[12]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[12]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[13]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[13]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[14]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[14]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[15]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[15]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[16]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[16]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[17]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|switches[17]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|keys[0]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|keys[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|keys[1]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|keys[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|keys[2]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|keys[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|keys[3]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|keys[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|dsc~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|dsc"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[0]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[1]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[2]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[3]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[4]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[5]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[6]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[7]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr[7]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr_wr~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr_wr"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[0]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[1]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[2]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[3]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[4]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[5]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[6]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[7]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[7]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[8]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[8]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[9]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[9]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[10]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[10]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[11]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[11]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[12]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[12]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[13]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[13]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[14]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[14]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[15]~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data[15]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data_wr~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data_wr"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_up~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_up"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_down~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_down"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_left~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_left"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_right~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_right"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_start~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_start"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_select~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_select"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_a~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_a"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_b~output"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|nes_buttons_btn_b"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr_full~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_instr_full"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data_full~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|gfx_data_full"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|clk~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|clk"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|res_n~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|res_n"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[4]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[5]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[6]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[0]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[3]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[1]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[2]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex7[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[4]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[5]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[6]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[0]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[3]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[1]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[2]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex6[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[4]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[5]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[6]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[0]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[3]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[1]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[2]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex5[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[4]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[5]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[6]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[0]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[3]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[1]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[2]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex4[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[4]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[5]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[6]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[0]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[3]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[1]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[2]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex3[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[4]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[5]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[6]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[0]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[16]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[16]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[3]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[1]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[17]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[17]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[2]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex2[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[4]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[12]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[12]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[15]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[15]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[5]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[13]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[13]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[6]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[14]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[14]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[0]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[8]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[8]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[8]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[8]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[3]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[11]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[11]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[1]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[9]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[9]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[2]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex1[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[10]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[10]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[4]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[4]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[4]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[4]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[7]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[7]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[7]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[7]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[5]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[5]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[5]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[5]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[6]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[6]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[6]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[6]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[0]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[0]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[0]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[0]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[3]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[3]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[3]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[3]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[1]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[1]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[1]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[1]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[2]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|hex0[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[2]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledr[2]"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[2]~input"
+    Info (35027): Removed I/O cell "dbg_port:dbg_port_inst|dbg_port_top:dbg_port_inst|ledg[2]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr_full~output"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr_full"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data_full~output"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data_full"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_frame_sync~output"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_frame_sync"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|display_clk~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|display_clk"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr_wr~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr_wr"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|clk~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|clk"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|res_n~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|res_n"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data_wr~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data_wr"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|display_res_n~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|display_res_n"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[1]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[1]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[0]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[0]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[2]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[2]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[4]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[4]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[5]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[5]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[6]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[6]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[7]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[7]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[3]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_instr[3]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[0]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[0]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[1]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[1]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[2]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[2]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[3]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[3]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[4]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[4]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[5]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[5]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[6]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[6]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[7]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[7]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[8]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[8]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[15]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[15]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[14]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[14]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[13]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[13]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[12]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[12]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[11]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[11]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[10]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[10]"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[9]~input"
+    Info (35027): Removed I/O cell "lcd_graphics_controller:lcd_graphics_controller_inst|gfx_data[9]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|prdata~output"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|prdata"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|load_seed~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|load_seed"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[7]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[7]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|clk~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|clk"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|res_n~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|res_n"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|en~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|en"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[6]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[6]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[0]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[0]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[1]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[1]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[2]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[2]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[3]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[3]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[5]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[5]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[4]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst0|seed[4]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|prdata~output"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|prdata"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|load_seed~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|load_seed"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[7]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[7]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|clk~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|clk"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|res_n~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|res_n"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|en~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|en"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[6]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[6]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[0]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[0]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[1]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[1]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[2]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[2]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[3]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[3]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[5]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[5]"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[4]~input"
+    Info (35027): Removed I/O cell "ball_game:ball_game_inst|prng:\random_state_generator:prng_inst1|seed[4]"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 21 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "keys[1]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 23
+    Warning (15610): No output dependent on input pin "keys[2]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 23
+    Warning (15610): No output dependent on input pin "keys[3]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 23
+    Warning (15610): No output dependent on input pin "switches[0]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[1]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[2]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[3]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[4]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[5]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[6]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[7]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[8]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[9]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[10]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[11]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[12]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[13]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[14]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[15]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[16]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Warning (15610): No output dependent on input pin "switches[17]" File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+Info (21057): Implemented 6602 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 27 input pins
+    Info (21059): Implemented 177 output pins
+    Info (21060): Implemented 19 bidirectional pins
+    Info (21061): Implemented 6246 logic cells
+    Info (21064): Implemented 132 RAM segments
+    Info (21065): Implemented 1 PLLs
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 93 warnings
+    Info: Peak virtual memory: 1157 megabytes
+    Info: Processing ended: Fri Apr  2 16:10:03 2021
+    Info: Elapsed time: 00:01:03
+    Info: Total CPU time (on all processors): 00:00:54
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Apr  2 16:10:06 2021
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off top -c top
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = top
+Info: Revision = top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20029): Only one processor detected - disabling parallel compilation
+Info (119006): Selected device EP4CE115F29C7 for design "top"
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (15535): Implemented PLL "pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|pll1" as Cyclone IV E PLL type File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/pll_altpll.v Line: 43
+    Info (15099): Implementing clock multiplication of 4, clock division of 25, and phase shift of 0 degrees (0 ps) for pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] port File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/pll_altpll.v Line: 43
+    Info (15099): Implementing clock multiplication of 6, clock division of 25, and phase shift of 0 degrees (0 ps) for pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] port File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/pll_altpll.v Line: 43
+Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+    Info (176445): Device EP4CE40F29C7 is compatible
+    Info (176445): Device EP4CE40F29I7 is compatible
+    Info (176445): Device EP4CE30F29C7 is compatible
+    Info (176445): Device EP4CE30F29I7 is compatible
+    Info (176445): Device EP4CE55F29C7 is compatible
+    Info (176445): Device EP4CE55F29I7 is compatible
+    Info (176445): Device EP4CE75F29C7 is compatible
+    Info (176445): Device EP4CE75F29I7 is compatible
+    Info (176445): Device EP4CE115F29I7 is compatible
+Info (169124): Fitter converted 4 user pins into dedicated programming pins
+    Info (169125): Pin ~ALTERA_ASDO_DATA1~ is reserved at location F4
+    Info (169125): Pin ~ALTERA_FLASH_nCE_nCSO~ is reserved at location E2
+    Info (169125): Pin ~ALTERA_DCLK~ is reserved at location P3
+    Info (169125): Pin ~ALTERA_DATA0~ is reserved at location N7
+Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
+Info (332164): Evaluating HDL-embedded SDC commands
+    Info (332165): Entity top
+        Info (332166): set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_dd9:dffpipe15|dffe16a* 
+        Info (332166): set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_cd9:dffpipe10|dffe11a* 
+Info (332104): Reading SDC File: 'SDC1.sdc'
+Info (332110): Deriving PLL clocks
+    Info (332110): create_generated_clock -source {pll_inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 25 -multiply_by 4 -duty_cycle 50.00 -name {pll_inst|altpll_component|auto_generated|pll1|clk[0]} {pll_inst|altpll_component|auto_generated|pll1|clk[0]}
+    Info (332110): create_generated_clock -source {pll_inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 25 -multiply_by 6 -duty_cycle 50.00 -name {pll_inst|altpll_component|auto_generated|pll1|clk[1]} {pll_inst|altpll_component|auto_generated|pll1|clk[1]}
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 3 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):   20.000          clk
+    Info (332111):  125.000 pll_inst|altpll_component|auto_generated|pll1|clk[0]
+    Info (332111):   83.333 pll_inst|altpll_component|auto_generated|pll1|clk[1]
+Info (176353): Automatically promoted node clk~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 20
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G1
+Info (176353): Automatically promoted node pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_1) File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/pll_altpll.v Line: 77
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
+Info (176353): Automatically promoted node pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[1] (placed in counter C1 of PLL_1) File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/pll_altpll.v Line: 77
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
+Info (176353): Automatically promoted node sync:reset_sync|sync[2]  File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/synchronizer/src/sync.vhd Line: 53
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node ssd_controller:ssd_controller_inst|hex0[0]~2 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 50
+        Info (176357): Destination node nes_controller:nes_controller_inst|button_state.btn_left~0 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/nes_controller/src/nes_controller.vhd Line: 18
+        Info (176357): Destination node ssd_controller:ssd_controller_inst|current_points[2] File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 50
+        Info (176357): Destination node ssd_controller:ssd_controller_inst|overflow~0 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 39
+        Info (176357): Destination node ssd_controller:ssd_controller_inst|overflow~1 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 39
+        Info (176357): Destination node ssd_controller:ssd_controller_inst|blink_cnt[0]~55 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 50
+        Info (176357): Destination node ssd_controller:ssd_controller_inst|blink_cnt[0]~79 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 50
+        Info (176357): Destination node ssd_controller:ssd_controller_inst|blink_cnt[0]~80 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 50
+        Info (176357): Destination node ssd_controller:ssd_controller_inst|prev_player_points[15]~0 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 50
+        Info (176357): Destination node ssd_controller:ssd_controller_inst|current_points[31] File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/ssd_controller/src/ssd_controller.vhd Line: 50
+        Info (176358): Non-global destination nodes limited to 10 nodes
+Info (176353): Automatically promoted node sync:audio_reset_sync|sync[2]  File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/synchronizer/src/sync.vhd Line: 53
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|audio_cntrl:audio_cntrl_inst|sync~0 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_top.qxp Line: -1
+        Info (176357): Destination node audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|audio_cntrl:audio_cntrl_inst|\dac_interface:sample_shift_reg[14]~0 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_top.qxp Line: -1
+        Info (176357): Destination node audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|audio_cntrl:audio_cntrl_inst|i2c_master:i2c_master_inst|data_clk File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_top.qxp Line: -1
+        Info (176357): Destination node audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|audio_cntrl:audio_cntrl_inst|i2c_master:i2c_master_inst|data_clk_prev File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_top.qxp Line: -1
+        Info (176357): Destination node audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|audio_cntrl:audio_cntrl_inst|i2c_master:i2c_master_inst|scl_clk File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_top.qxp Line: -1
+        Info (176357): Destination node audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|audio_cntrl:audio_cntrl_inst|synthesizer:\synth:GENERATE_SYHTESIZERS:0:synthesizer_inst1|current_high_time[7]~0 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_top.qxp Line: -1
+        Info (176357): Destination node audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|audio_cntrl:audio_cntrl_inst|synthesizer:\synth:GENERATE_SYHTESIZERS:1:synthesizer_inst1|current_high_time[7]~0 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_top.qxp Line: -1
+        Info (176357): Destination node audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|audio_cntrl:audio_cntrl_inst|i2c_master:i2c_master_inst|data_tx[0]~4 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_top.qxp Line: -1
+        Info (176357): Destination node audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|audio_cntrl:audio_cntrl_inst|synthesizer:\synth:GENERATE_SYHTESIZERS:0:synthesizer_inst1|high_time[7]~0 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_top.qxp Line: -1
+        Info (176357): Destination node audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|audio_cntrl:audio_cntrl_inst|synthesizer:\synth:GENERATE_SYHTESIZERS:1:synthesizer_inst1|high_time[7]~0 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/audio_cntrl/src/audio_cntrl_top.qxp Line: -1
+Info (176233): Starting register packing
+Info (176235): Finished register packing
+    Extra Info (176219): No registers were packed into other blocks
+Warning (15064): PLL "pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|pll1" output port clk[0] feeds output pin "lcd_graphics_controller:lcd_graphics_controller_inst|nclk~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/pll_altpll.v Line: 43
+Warning (15064): PLL "pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|pll1" output port clk[1] feeds output pin "audio_cntrl_2s:audio_cntrl_2s_inst|audio_cntrl_top:audio_cntrl_inst|wm8731_xck~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/db/pll_altpll.v Line: 43
+Warning (15705): Ignored locations or region assignments to the following nodes
+    Warning (15706): Node "lcd_data[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "lcd_data[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "lcd_data[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "lcd_data[3]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "lcd_data[4]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "lcd_data[5]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "lcd_data[6]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "lcd_data[7]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "lcd_en" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "lcd_on" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "lcd_rs" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "lcd_rw" is assigned to location or region, but does not exist in design
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:23
+Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
+Info (170189): Fitter placement preparation operations beginning
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:08
+Info (170191): Fitter placement operations beginning
+Info (170137): Fitter placement was successful
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:59
+Info (170193): Fitter routing operations beginning
+Info (170195): Router estimated average interconnect usage is 1% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 11% of the available device resources in the region that extends from location X69_Y37 to location X80_Y48
+Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+    Info (170201): Optimizations that may affect the design's routability were skipped
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:22
+Info (11888): Total time spent on timing analysis during the Fitter is 12.83 seconds.
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:11
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Warning (169177): 46 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
+    Info (169178): Pin wm8731_sdat uses I/O standard 3.3-V LVTTL at A8 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 79
+    Info (169178): Pin wm8731_sclk uses I/O standard 3.3-V LVTTL at B7 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 80
+    Info (169178): Pin emulated_nes_latch uses I/O standard 3.3-V LVTTL at AC15 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 60
+    Info (169178): Pin emulated_nes_clk uses I/O standard 3.3-V LVTTL at AB22 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 59
+    Info (169178): Pin rx uses I/O standard 3.3-V LVTTL at G12 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 55
+    Info (169178): Pin sram_dq[0] uses I/O standard 3.3-V LVTTL at AH3 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[1] uses I/O standard 3.3-V LVTTL at AF4 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[2] uses I/O standard 3.3-V LVTTL at AG4 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[3] uses I/O standard 3.3-V LVTTL at AH4 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[4] uses I/O standard 3.3-V LVTTL at AF6 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[5] uses I/O standard 3.3-V LVTTL at AG6 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[6] uses I/O standard 3.3-V LVTTL at AH6 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[7] uses I/O standard 3.3-V LVTTL at AF7 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[8] uses I/O standard 3.3-V LVTTL at AD1 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[9] uses I/O standard 3.3-V LVTTL at AD2 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[10] uses I/O standard 3.3-V LVTTL at AE2 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[11] uses I/O standard 3.3-V LVTTL at AE1 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[12] uses I/O standard 3.3-V LVTTL at AE3 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[13] uses I/O standard 3.3-V LVTTL at AE4 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[14] uses I/O standard 3.3-V LVTTL at AF3 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sram_dq[15] uses I/O standard 3.3-V LVTTL at AG3 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 69
+    Info (169178): Pin sda uses I/O standard 3.3-V LVTTL at P27 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 51
+    Info (169178): Pin keys[1] uses I/O standard 2.5 V at M21 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 23
+    Info (169178): Pin keys[2] uses I/O standard 2.5 V at N21 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 23
+    Info (169178): Pin keys[3] uses I/O standard 2.5 V at R24 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 23
+    Info (169178): Pin switches[0] uses I/O standard 3.3-V LVTTL at AB28 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[1] uses I/O standard 3.3-V LVTTL at AC28 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[2] uses I/O standard 3.3-V LVTTL at AC27 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[3] uses I/O standard 3.3-V LVTTL at AD27 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[4] uses I/O standard 3.3-V LVTTL at AB27 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[5] uses I/O standard 3.3-V LVTTL at AC26 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[6] uses I/O standard 3.3-V LVTTL at AD26 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[7] uses I/O standard 3.3-V LVTTL at AB26 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[8] uses I/O standard 3.3-V LVTTL at AC25 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[9] uses I/O standard 3.3-V LVTTL at AB25 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[10] uses I/O standard 3.3-V LVTTL at AC24 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[11] uses I/O standard 3.3-V LVTTL at AB24 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[12] uses I/O standard 3.3-V LVTTL at AB23 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[13] uses I/O standard 3.3-V LVTTL at AA24 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[14] uses I/O standard 3.3-V LVTTL at AA23 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[15] uses I/O standard 3.3-V LVTTL at AA22 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[16] uses I/O standard 3.3-V LVTTL at Y24 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin switches[17] uses I/O standard 3.3-V LVTTL at Y23 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 24
+    Info (169178): Pin clk uses I/O standard 3.3-V LVTTL at Y2 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 20
+    Info (169178): Pin keys[0] uses I/O standard 2.5 V at M23 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 23
+    Info (169178): Pin nes_data uses I/O standard 3.3-V LVTTL at AE20 File: /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/src/top.vhd Line: 66
+Info (144001): Generated suppressed messages file /run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/output_files/top.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 1493 megabytes
+    Info: Processing ended: Fri Apr  2 16:12:53 2021
+    Info: Elapsed time: 00:02:47
+    Info: Total CPU time (on all processors): 00:02:42
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Apr  2 16:12:59 2021
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off top -c top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (115031): Writing out detailed assembly data for power analysis
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 938 megabytes
+    Info: Processing ended: Fri Apr  2 16:13:10 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:10
+Info (293026): Skipped module Power Analyzer due to the assignment FLOW_ENABLE_POWER_ANALYZER
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Apr  2 16:13:13 2021
+Info: Command: quartus_sta top -c top
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20029): Only one processor detected - disabling parallel compilation
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332164): Evaluating HDL-embedded SDC commands
+    Info (332165): Entity top
+        Info (332166): set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_dd9:dffpipe15|dffe16a* 
+        Info (332166): set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_cd9:dffpipe10|dffe11a* 
+Info (332104): Reading SDC File: 'SDC1.sdc'
+Info (332110): Deriving PLL clocks
+    Info (332110): create_generated_clock -source {pll_inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 25 -multiply_by 4 -duty_cycle 50.00 -name {pll_inst|altpll_component|auto_generated|pll1|clk[0]} {pll_inst|altpll_component|auto_generated|pll1|clk[0]}
+    Info (332110): create_generated_clock -source {pll_inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 25 -multiply_by 6 -duty_cycle 50.00 -name {pll_inst|altpll_component|auto_generated|pll1|clk[1]} {pll_inst|altpll_component|auto_generated|pll1|clk[1]}
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -17.330
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -17.330             -17.330 clk 
+    Info (332119):    75.179               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):   119.383               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case hold slack is 0.334
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.334               0.000 clk 
+    Info (332119):     0.402               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.402               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+Info (332146): Worst-case recovery slack is 13.829
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    13.829               0.000 clk 
+    Info (332119):    78.332               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):   121.324               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case removal slack is 1.013
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.013               0.000 clk 
+    Info (332119):     1.257               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     2.389               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+Info (332146): Worst-case minimum pulse width slack is 9.547
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.547               0.000 clk 
+    Info (332119):    41.374               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):    62.208               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332114): Report Metastability: Found 15 synchronizer chains.
+    Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
+
+    Info (332114): Number of Synchronizer Chains Found: 15
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.467
+    Info (332114): Worst Case Available Settling Time: 26.335 ns
+    Info (332114): Typical MTBF values are calculated based on the nominal silicon characteristics, at nominal operating conditions.
+    Info (332114):   - Under typical conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 10.8
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -13.597
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -13.597             -13.597 clk 
+    Info (332119):    75.884               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):   119.943               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case hold slack is 0.339
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.339               0.000 clk 
+    Info (332119):     0.354               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.354               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+Info (332146): Worst-case recovery slack is 14.343
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    14.343               0.000 clk 
+    Info (332119):    78.786               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):   121.553               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case removal slack is 0.921
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.921               0.000 clk 
+    Info (332119):     1.158               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     2.176               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+Info (332146): Worst-case minimum pulse width slack is 9.556
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.556               0.000 clk 
+    Info (332119):    41.376               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):    62.192               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332114): Report Metastability: Found 15 synchronizer chains.
+    Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
+
+    Info (332114): Number of Synchronizer Chains Found: 15
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.467
+    Info (332114): Worst Case Available Settling Time: 27.456 ns
+    Info (332114): Typical MTBF values are calculated based on the nominal silicon characteristics, at nominal operating conditions.
+    Info (332114):   - Under typical conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 10.8
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332146): Worst-case setup slack is 1.359
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.359               0.000 clk 
+    Info (332119):    79.227               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):   122.063               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case hold slack is 0.134
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.134               0.000 clk 
+    Info (332119):     0.181               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     0.181               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+Info (332146): Worst-case recovery slack is 16.625
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    16.625               0.000 clk 
+    Info (332119):    80.669               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):   123.026               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332146): Worst-case removal slack is 0.481
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.481               0.000 clk 
+    Info (332119):     0.584               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+    Info (332119):     1.185               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+Info (332146): Worst-case minimum pulse width slack is 9.199
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.199               0.000 clk 
+    Info (332119):    41.446               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[1] 
+    Info (332119):    62.254               0.000 pll_inst|altpll_component|auto_generated|pll1|clk[0] 
+Info (332114): Report Metastability: Found 15 synchronizer chains.
+    Info (332114): Typical MTBF of Design is 1e+09 years or 3.15e+16 seconds.
+
+    Info (332114): Number of Synchronizer Chains Found: 15
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 0.467
+    Info (332114): Worst Case Available Settling Time: 33.092 ns
+    Info (332114): Typical MTBF values are calculated based on the nominal silicon characteristics, at nominal operating conditions.
+    Info (332114):   - Under typical conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 10.8
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 1032 megabytes
+    Info: Processing ended: Fri Apr  2 16:13:29 2021
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:14
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Apr  2 16:13:35 2021
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off top -c top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file top_7_1200mv_85c_slow.vho in folder "/run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_7_1200mv_0c_slow.vho in folder "/run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_min_1200mv_0c_fast.vho in folder "/run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top.vho in folder "/run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_7_1200mv_85c_vhd_slow.sdo in folder "/run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_7_1200mv_0c_vhd_slow.sdo in folder "/run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_min_1200mv_0c_vhd_fast.sdo in folder "/run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file top_vhd.sdo in folder "/run/media/edauser/USB_64GB/ddca_ss2021/dd/vhdl/top/quartus/simulation/modelsim/" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1228 megabytes
+    Info: Processing ended: Fri Apr  2 16:14:00 2021
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:17
+Info (293000): Quartus Prime Full Compilation was successful. 0 errors, 118 warnings
+Info (23030): Evaluation of Tcl script /opt/intelFPGA_lite/18.1/quartus/common/tcl/internal/qsh_flow.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 118 warnings
+    Info: Peak virtual memory: 910 megabytes
+    Info: Processing ended: Fri Apr  2 16:14:01 2021
+    Info: Elapsed time: 00:05:07
+    Info: Total CPU time (on all processors): 00:04:33

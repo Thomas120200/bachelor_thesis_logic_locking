@@ -1,0 +1,126 @@
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.ssd_array_t.all;
+
+entity ssd_bin_to_dec is
+	port (
+		clk : in std_logic;
+		res_n : in std_logic;
+		ssd : out ssd_array_t(0 to 7);
+		bin : in std_logic_vector(8 downto 0)
+	);
+end entity;
+
+
+
+architecture arch of ssd_bin_to_dec is
+
+
+	function bcd_to_ssd(bcd : std_logic_vector) return std_logic_vector is
+		variable ret : std_logic_vector(6 downto 0);
+	begin
+		case bcd is
+			when "0000" => ret := "1000000";
+			when "0001" => ret := "1111001";
+			when "0010" => ret := "0100100";
+			when "0011" => ret := "0110000";
+			when "0100" => ret := "0011001";
+			when "0101" => ret := "0010010";
+			when "0110" => ret := "0000010";
+			when "0111" => ret := "1111000";
+			when "1000" => ret := "0000000";
+			when "1001" => ret := "0010000";
+			when others => ret := "0111111";
+		end case;
+		return ret;	
+	end function;
+	
+	signal bcd : std_logic_vector(11 downto 0);
+	type state_t is (PAUSE, SHIFT, CHECK, INC, UPDATE);
+	signal state, next_state : state_t;
+	signal cnt, next_cnt : integer;
+	signal scratch_reg, next_scratch_reg : unsigned(20 downto 0);
+	signal bcd_reg, next_bcd_reg : std_logic_vector(11 downto 0);
+	
+begin
+
+	
+	ssd(0) <= bcd_to_ssd(bcd_reg(3 downto 0));
+	ssd(1) <= bcd_to_ssd(bcd_reg(7 downto 4));
+	ssd(2) <= bcd_to_ssd(bcd_reg(11 downto 8));
+	ssd(3) <= bcd_to_ssd("0000");
+	ssd(4) <= bcd_to_ssd("0000");
+	ssd(5) <= bcd_to_ssd("0000");
+	ssd(6) <= bcd_to_ssd("0000");
+	ssd(7) <= bcd_to_ssd("0000");
+
+	async : process(state, next_state, cnt) is
+	begin
+		-- potential errors: sensitivity list, implicit conversion from std vec to unsigned
+		next_state <= state;
+		next_scratch_reg <= scratch_reg;
+		next_bcd_reg <= bcd_reg;
+		next_cnt <= cnt;
+		
+		case state is 
+			when PAUSE =>
+				if cnt > 500000 then
+					next_scratch_reg <= (others => '0');
+					next_scratch_reg(8 downto 0) <= unsigned(bin);
+					next_state <= SHIFT;
+					next_cnt <= 0;
+				else
+					next_cnt <= cnt + 1;
+				end if;
+			when SHIFT =>
+				next_scratch_reg(20 downto 1) <= scratch_reg(19 downto 0);
+				next_scratch_reg(0) <= '0';
+				if cnt < 8 then
+					next_state <= CHECK;
+				else
+					next_state <= UPDATE;
+					next_cnt <= 0;
+				end if;
+			when CHECK =>
+				if scratch_reg(20 downto 17) > 4 then
+					next_scratch_reg(20 downto 17) <= scratch_reg(20 downto 17) + 3;
+				end if;
+				if scratch_reg(16 downto 13) > 4 then
+					next_scratch_reg(16 downto 13) <= scratch_reg(16 downto 13) + 3;
+				end if;
+				if scratch_reg(12 downto 9) > 4 then
+					next_scratch_reg(12 downto 9) <= scratch_reg(12 downto 9) + 3;
+				end if;
+				
+				next_state <= INC;
+			when INC =>
+				next_cnt <= cnt + 1;
+				next_state <= SHIFT;
+			when UPDATE =>
+				next_bcd_reg <= std_logic_vector(scratch_reg(20 downto 9));
+				next_state <= PAUSE;
+				
+		end case;
+	end process;
+				
+
+	
+	sync : process(clk, res_n) is
+	begin
+		if res_n = '0' then
+			state <= PAUSE;
+			cnt <= 0;
+			bcd_reg <= (others => '0');
+		elsif rising_edge(clk) then
+			state <= next_state;
+			cnt <= next_cnt;
+			scratch_reg <= next_scratch_reg;
+			bcd_reg <= next_bcd_reg;
+		end if;
+	end process;
+	
+
+end architecture;

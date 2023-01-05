@@ -1,0 +1,77 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+# Date created = 18:38:24  March 16, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		top_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:38:23  MARCH 16, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name VHDL_FILE ../src/top.vhd
+set_global_assignment -name VHDL_FILE ../../synchronizer/src/sync_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../synchronizer/src/sync.vhd
+set_global_assignment -name VHDL_FILE ../../ram/src/ram_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../ram/src/dp_ram_1c1r1w.vhd
+set_global_assignment -name VHDL_FILE ../../ram/src/fifo_1c1r1w.vhd
+set_global_assignment -name VHDL_FILE ../../prng/src/prng_pkg.vhd
+set_global_assignment -name QXP_FILE ../../prng/src/prng.qxp
+set_global_assignment -name VHDL_FILE ../../nes_controller/src/nes_controller_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../math/src/math_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../lcd_graphics_controller/src/lcd_graphics_controller_pkg.vhd
+set_global_assignment -name QXP_FILE ../../lcd_graphics_controller/src/lcd_graphics_controller.qxp
+set_global_assignment -name VHDL_FILE ../../lcd_graphics_controller/src/gfx_if_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../display_switch/src/display_switch_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../display_switch/src/display_switch.vhd
+set_global_assignment -name QXP_FILE ../../dbg_port/src/dbg_port_top.qxp
+set_global_assignment -name VHDL_FILE ../../dbg_port/src/dbg_port_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../dbg_port/src/dbg_port.vhd
+set_global_assignment -name VHDL_FILE ../../ball_game/src/ball_game_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../ball_game/src/ball_game_ex1.vhd
+set_global_assignment -name VHDL_FILE ../../ball_game/src/ball_game.vhd
+set_global_assignment -name QXP_FILE ../../audio_cntrl/src/audio_cntrl_top.qxp
+set_global_assignment -name VHDL_FILE ../../audio_cntrl/src/audio_cntrl_pkg.vhd
+set_global_assignment -name VHDL_FILE ../../audio_cntrl/src/audio_cntrl_2s.vhd
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name QIP_FILE ../src/pll.qip
