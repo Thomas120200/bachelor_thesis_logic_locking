@@ -7,3 +7,4 @@ the correct key the design will output the decimal representation of the users i
 If a incorrect key is applied the result on the SSD will be erroneous for a large number of inputs. The error rate
 can be influenced by specifying the Hamming distance.
 
+vhdl/top/quartus/top.qpf can be used to open the design as a project in quartus prime and download it to an FPGA.
