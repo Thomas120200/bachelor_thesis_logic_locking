@@ -8,3 +8,5 @@ If a incorrect key is applied the result on the SSD will be erroneous for a larg
 can be influenced by specifying the Hamming distance.
 
 vhdl/top/quartus/top.qpf can be used to open the design as a project in quartus prime and download it to an FPGA.
+
+sfll_hd_visualizer.m is a matlab script that can be used to verify the results of the fpga and to generate images that visualize the output corruption.
