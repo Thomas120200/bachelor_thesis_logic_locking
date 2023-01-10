@@ -50,12 +50,10 @@ end entity;
 architecture arch of top is
 
 	constant SYNC_STAGES : integer := 2;
-	constant WIDTH : integer := 400;
-	constant HEIGHT : integer := 240;
 	constant RESET_VALUE : std_logic := '1';
 	
 	-- specify the secret key
-	constant SECRET : std_logic_vector(8 downto 0) := "001111011";
+	constant SECRET : std_logic_vector(8 downto 0) := "000101010"; --42
 	
 	-- specify the Hamming distance
 	constant HD : natural := 4;
