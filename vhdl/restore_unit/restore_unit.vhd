@@ -41,6 +41,7 @@ begin
 	calc_mask : process(bin, key) is
 	begin
 		if hamming(bin, key) = HD then
+				-- output arbitrary mask signals to destroy the ssd signals
 				mask(0) <= "1111011";
 				mask(1) <= "0011010";
 				mask(2) <= "0011011";
